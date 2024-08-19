@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Roboto',sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+.logo p,p>img{
+    border: 1px black solid;
+    width: 190px;
+    height: 80px;
+    /* border-radius: 50%; */
+    border:none;
+}
+ul>li:hover{
+    color: blueviolet;
+    transition: 0.5s ease-in-out;
+}
+.defile{
+    border: 2px black solid;
+    width: 100%;
+    height: 580px;
+}
+.header{
+    position: relative;
+}
+.icon{
+    display: none;
+    position: absolute;
+    /* left: 500px; */
+    top: 10px;
+}
+.logo{
+    text-align: center;
+}
+body {
+    margin-top: 80px; /* Ajustez selon la hauteur de votre barre */
+}
+ul>li{
+    list-style: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.recherche{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.arrondi-input{
+    border-radius: 20px 0px 0px 20px;
+}
+.arrondi-but{
+    border-radius: 0px 20px 20px 0px;
+}
+@media (max-width: 653px) {
+   
+    ul {
+        text-align: center;
+        padding: 0;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+    /* .taille{
+        height: 800px;
+    } */
+    ul.show {
+        max-height: 200px; 
+    }
+
+}
+@media (max-width: 644px) {
+    .icon{
+        display: block;
+        position: absolute;
+        /* left: 500px; */
+        top: 10px;
+    }
+
+}
+@media (max-width: 577px) {
+    .arrondi-input{
+        width: 100%;
+    }
+    .font-awe {
+        position: absolute;
+        top: 15px;
+        left: 300px;
+    }
+    .logo{
+        margin: 0 auto;
+        top: 50px;
+        margin-top: -20px;
+        /* display: flex;
+        justify-content: flex-end;
+        margin-left: 60px; */
+    }
+    /* .font-awe{
+        position: relative;
+    } */
+    .logo>p{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    
+    /* .i{
+        position: absolute;
+        right: 30px;
+    } */
+
+    
+    /* .contenant-font{
+        position: relative;
+    } */
+
+}
+#carouselExampleDark .carousel-item img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    #carouselExampleDark .carousel-item img {
+      height: 600px;
+    }
+    
+  }
+  
+  @media (max-width: 577px) {
+    #carouselExampleDark .carousel-item img {
+      height: 600px;
+    }
+ 
+
+  }
+  .section-title{
+    font-size: 40px;
+  }
+  .line{
+        width: 150px;
+        height: 3px;
+        background: #ddd;
+        margin: auto;
+  }
+  .line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: #0d6efd;
+    z-index: 99;
+  }
+  .apropos,.avantage,.footer{
+        background-color: #f7f7f7;
+  }
+  .apropos .cont-apropos{
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+  }
+  .apropos .cont-apropos i{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 60px; 
+        color: #fff;
+        background-color: #0d6efd;
+  }
+
+  .serv-contenu{
+        font-size: 17px;
+        color: #888;
+        margin-bottom: 20px;
+  }
+  .card-utilisation{
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 976px) {
+        .card-utilisation{
+            text-align: center;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+  }
+  @media (max-width: 360px) {
+    .card-utilisation{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black; /* Remplace la couleur des icônes par du noir */
+  }
+  .avantage1{
+    border: 1px #dee2e6 solid;
+    border-radius: 10px 0 0 10px;
+    background-color: white;
+    border-left: 5px #0d6efd solid;
+  }
+  /* .title h3{
+        
+  } */
+   .image img{
+        width: 100%;
+        height: 450px;
+   }
+   .contenu-type p{
+        line-height: 1.6;
+        color: #888;
+   }
+   @media (max-width: 1076px) {
+    .image img{
+        width: 100%;
+        height: 350px;
+   }
+}
+@media (max-width: 375px) {
+    .card-utilisation{
+        text-align: center;
+        margin: auto 0;
+        margin-bottom: 10px;
+    }
+    /* .avantage1{
+        text-align: center;
+    } */
+}
+@media (max-width: 1208px) {
+    .logo p,p>img{
+        border: 1px black solid;
+        width: 100px;
+        height: 60px;
+        /* border-radius: 50%; */
+        border:none;
+    }
+    .font-awe{
+        position: absolute;
+        top: 10%;
+        left: 60%;
+    }
+
+}
